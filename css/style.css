@@ -9,10 +9,57 @@
 }
 
 :root {
-    --bg-color: rgb(0, 13, 29);
-    --second-bg-color: rgb(3, 17, 37);
-    --text-color: #fff;
-    --main-color: #ff006a;
+    --bg-color: rgb(0, 0, 0);
+    --second-bg-color: rgb(0, 0, 0);
+    --text-color: #F2F0EF;
+    --main-color: #ff0000;
+}
+
+.card-title {
+    text-decoration: solid;
+    border-radius: 15px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.card-title-text {
+    list-style-type: disc;     /* Adds bullet points */
+    margin: 0;                 /* Removes default margin */
+    padding: 0 20px;           /* Adds padding for better alignment */
+    color: white;              /* Text color */
+    font-size: 16px;           /* Adjust font size */
+    line-height: 1.5;          /* Improves line spacing */
+}
+
+.card-text li {
+    margin-bottom: 10px; /* Adds spacing between items */
+}
+
+.card-text .button-item {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #a20000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-text a {
+    text-decoration: none !important;
+}
+
+.card-text .button-item:hover {
+    background-color: #0056b3;      /* Darkens button on hover */
+    transform: scale(1.05);         /* Slightly enlarges button on hover */
 }
 
 html {
@@ -292,8 +339,8 @@ header {
 }
 
 .about-img {
-    width: 280px;
-    height: 280px;
+    width: 480px !important;
+    height: 480px!important;
     border: 12px solid var(--second-bg-color);
     box-shadow: 0 0 0 12px var(--main-color);
     transition: .5s;
